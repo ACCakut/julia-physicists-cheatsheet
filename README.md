@@ -1,7 +1,12 @@
 # julia-physicists-cheatsheet
 A handy reference for the lecture Advanced Statistical Physics (and others)
 
+## What is where?
 
+- If you just want the cheatsheet, go to julia-cheatsheet.pdf and you are fine.
+- If you want to create it by your own, install pandoc, the eisvogel template and run pandoc --defaults settings.yaml -o my.pdf
+- If you want the edit something: The content can be found in /content, from which the markdown files, listed in settings.yaml, are piped to pandoc. pandoc can parse this files to amazing many formats, e.g. PDF (via LaTeX) or HTML. Feel free to create an issue or discussion if you think something can be improved.
+- If you want to understand, how this works: pandoc takes the settings.yaml and parses the markdown. During this it uses the default-code-class.lua-filter to set julia as the default code-language to codeblocks (so we do not have to manually everytime). For generating the PDF, pandoc uses XeLaTeX and the eisvogel template + the custom title-background.pdf. This should happen automatically by GitHubs actions (by /.github/workflows/ files), everytime there is a commit. But I do not understand how 😉 (there are still some LaTeX packages to be added to the docker container).
 
 <br>
 
