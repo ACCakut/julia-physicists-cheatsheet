@@ -1,6 +1,6 @@
 # Introduction
 
-This is a (not so) small and elective collection of important code-snippets for the Advanced Statistical Physics lecture. For convenience of julia-beginners there is a small basic tutorial, which is directed to people who have experience in programming but are new to julia. Another good start is [julia express](http://bogumilkaminski.pl/files/julia_express.pdf). Other cheat cheets are from [juliadocs](https://juliadocs.github.io/Julia-Cheat-Sheet/) the comparison-cheatsheet from [QuantEcon]{https://cheatsheets.quantecon.org/}, which is also great and lists many useful snippets. More comprehensive examples can be found on [rip-tutorials](https://riptutorial.com/julia-lang).
+This is a (not so) small and elective collection of important code-snippets for the Advanced Statistical Physics lecture. For convenience of julia-beginners there is a small basic tutorial, which is directed to people who have experience in programming but are new to julia. Another good start is [julia express](http://bogumilkaminski.pl/files/julia_express.pdf). Other good cheatsheets are the one from [juliadocs](https://juliadocs.github.io/Julia-Cheat-Sheet/) and the Matlab-Python-Julia-comparison-cheatsheet from [QuantEcon]{https://cheatsheets.quantecon.org/}. More comprehensive examples can be found on [rip-tutorials](https://riptutorial.com/julia-lang).
 
 ## Specifics of julia
 
