@@ -16,7 +16,7 @@ jobs:
       - uses: docker://pandoc/latex:2.12
         with:
           path: $GITHUB_WORKSPACE
-          args: --defaults settings.yaml --output=output/julia-cheatsheet.pdf
+          args: --data-dir=./.pandoc --defaults settings.yaml --output=output/julia-cheatsheet.pdf
       - uses: actions/upload-artifact@master
         with:
           name: output
