@@ -4,11 +4,10 @@ on: push
 
 jobs:
   convert_via_pandoc:
-    runs-on: ubuntu-18.04
+    runs-on: alpine-latest
     steps:
       - uses: actions/checkout@v2
-      - run: |
-            wget https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/master/eisvogel.tex
+#      - run: |
 #          echo "Lorem ipsum" > lorem_1.md  # create two example files
 #          echo "dolor sit amet" > lorem_2.md
 #          mkdir output  # create output dir
@@ -16,6 +15,7 @@ jobs:
 #          echo "FILELIST=$(printf '"%s" ' *.md)" >> $GITHUB_ENV
       - uses: docker://pandoc/latex:2.12
         with:
+          path: $GITHUB_WORKSPACE
           args: --defaults settings.yaml --output=output/julia-cheatsheet.pdf
       - uses: actions/upload-artifact@master
         with:
