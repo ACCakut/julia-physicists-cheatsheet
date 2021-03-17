@@ -7,7 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-#      - run: |
+      - run: |
+           tlmgr install adjustbox babel-german background bidi collectbox csquotes everypage filehook footmisc footnotebackref framed fvextra letltxmacro ly1 mdframed mweights needspace pagecolor sourcecodepro sourcesanspro titling ucharcat ulem unicode-math upquote xecjk xurl zref
+
 #          echo "Lorem ipsum" > lorem_1.md  # create two example files
 #          echo "dolor sit amet" > lorem_2.md
 #          mkdir output  # create output dir
