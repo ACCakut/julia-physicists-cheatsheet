@@ -7,7 +7,8 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-#      - run: |
+      - run: |
+            wget https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/master/eisvogel.tex
 #          echo "Lorem ipsum" > lorem_1.md  # create two example files
 #          echo "dolor sit amet" > lorem_2.md
 #          mkdir output  # create output dir
