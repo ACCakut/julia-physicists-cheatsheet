@@ -6,17 +6,8 @@ jobs:
   convert_via_pandoc:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - run: |
-           tlmgr install adjustbox babel-german background bidi collectbox csquotes everypage filehook footmisc footnotebackref framed fvextra letltxmacro ly1 mdframed mweights needspace pagecolor sourcecodepro sourcesanspro titling ucharcat ulem unicode-math upquote xecjk xurl zref
-
-#          echo "Lorem ipsum" > lorem_1.md  # create two example files
-#          echo "dolor sit amet" > lorem_2.md
-#          mkdir output  # create output dir
-#          # this will also include README.md
-#          echo "FILELIST=$(printf '"%s" ' *.md)" >> $GITHUB_ENV
       - uses: docker://pandoc/latex:2.12
-        with:
+      -  with:
           path: $GITHUB_WORKSPACE
           args: --data-dir=./.pandoc --defaults settings.yaml --output=output/julia-cheatsheet.pdf
       - uses: actions/upload-artifact@master
